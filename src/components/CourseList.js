@@ -4,22 +4,21 @@ import CourseCard from './CourseCard';
 
 export default class CourseList extends Component {
 
-  state = {
-    courses: [],
-  };
+  state = {};
 
   async componentDidMount() {
     const response = await axios.get(`https://private-e05942-courses22.apiary-mock.com/courses`);
     console.log(response.data);
-    this.setState({ courses: response.data })
+    this.setState({ courses: response.data });
   }
 
   render() {
+    const { courses } = this.state;
     return (
       <div className="CourseList">
-        {this.state.courses ? (
+        {courses ? (
           <div className="list">
-            {this.state.courses.map(course => (
+            {courses.map(course => (
               <CourseCard key={course.title} title={course.title} slug={course.slug} start={course.next_start_formatted} />
             ))}
           </div>

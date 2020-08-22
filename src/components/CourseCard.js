@@ -1,17 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 
 export default class CourseCard extends Component {
 
+  state = {
+    slug: '',
+  }
+
+  componentDidMount() {
+    const { slug } = this.props;
+    this.setState({ slug: slug });
+    localStorage.setItem('slug', this.state.slug);
+
+  }
 
   render() {
-    const { title, slug, start } = this.props;
+    const { title } = this.props;
     return (
       <div className="CourseCard">
         <div className="card">
           <h1 className="card-header">{title}</h1>
-          <p>{start}</p>
-          <button>Details</button>
+          <button>See Details</button>
         </div>
       </div>
     )
