@@ -11,7 +11,7 @@ This is the current state of my project after ~3 hours of work.
 
 ## Further Comments
 
-It was a totally new experience for me to have a relatively short time slot to build a project from scratch. I started to build the main functionality as making GET requests and displaying the corresponding data. Getting the geolocation via another API I postponed because I had to first familiarize myself with the implementation (but wanted to have the basics already up and running).
+It was a totally new experience for me to have a relatively short time slot to build a project from scratch. I started to build the main functionality as making GET requests and displaying the corresponding data. Getting the geolocation via another API I postponed because I had to first familiarize myself with the implementation (but wanted to have the basics already up and running). I planned to use Sass for the styling. 
 
 ## Thank you
 Thank you for this challenge. If you have any questions, I'll be happy to answer them at any time.
