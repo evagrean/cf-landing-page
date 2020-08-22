@@ -11,3 +11,18 @@ $font-color-indigo: #223c50;
   color: $font-color-white;
 }
 
+.main-heading {
+  font-size: 3em;
+}
+
+.button {
+  background-color: $petrol-light;
+  border: none;
+  width: 10em;
+  height: 4em;
+}
+
+.button:hover {
+  background-color: darken($petrol-light, 20%);
+}
+
